@@ -1,0 +1,174 @@
+<style>
+#chasidica-concept { --ch-paper: light-dark(#f8f4eb,#272b2a); --ch-ink: light-dark(#27372f,#ece9de); --ch-muted: light-dark(#59665e,#b7c1b7); --ch-line: light-dark(#d6d9ca,#4b5550); --ch-land: light-dark(#d6dfcd,#37473e); --ch-pave: light-dark(#e7e6d9,#697166); --ch-road: light-dark(#a9b5ac,#505c55); --ch-brick: light-dark(#b78067,#926950); --ch-brick-side: light-dark(#916955,#705442); --ch-roof: light-dark(#d2b296,#ac947e); --ch-green: light-dark(#487360,#82b29a); --ch-deep: light-dark(#315846,#40634f); --ch-gold: light-dark(#8c641e,#e0b967); --ch-active: light-dark(#f3e8cc,#494331); --ch-window: light-dark(#eee3be,#d1bc87); color:var(--ch-ink); background:var(--ch-paper); font:14px/1.5 system-ui,sans-serif; border:1px solid var(--ch-line); border-radius:12px; overflow:hidden; }
+#chasidica-concept * { box-sizing:border-box; }
+#chasidica-concept button { font:inherit; cursor:pointer; color:inherit; }
+#chasidica-concept .ch-header { display:flex; flex-wrap:wrap; gap:12px 28px; align-items:center; justify-content:space-between; padding:17px 22px; border-bottom:1px solid var(--ch-line); }
+#chasidica-concept .ch-brand { font:24px/1.2 Georgia,serif; letter-spacing:.09em; }
+#chasidica-concept .ch-subtitle { color:var(--ch-muted); font-size:12px; margin-top:3px; }
+#chasidica-concept .ch-resources { display:flex; flex-wrap:wrap; gap:18px; font-variant-numeric:tabular-nums; }
+#chasidica-concept .ch-resource span { display:block; color:var(--ch-muted); font-size:12px; }
+#chasidica-concept .ch-main { display:grid; grid-template-columns:minmax(0,1fr) 290px; }
+#chasidica-concept .ch-town { background:var(--ch-land); min-width:0; position:relative; }
+#chasidica-concept .ch-map-title { padding:16px 20px 0; display:flex; flex-wrap:wrap; gap:5px 12px; justify-content:space-between; color:var(--ch-ink); }
+#chasidica-concept .ch-map-title small { font-size:12px; color:var(--ch-muted); }
+#chasidica-concept .ch-scene { position:relative; width:100%; }
+#chasidica-concept .ch-scene svg { width:100%; display:block; }
+#chasidica-concept .ch-map-label { position:absolute; transform:translate(-50%,-50%); background:var(--ch-paper); border:1px solid var(--ch-line); box-shadow:0 2px 3px #0002; border-radius:5px; padding:7px 10px; white-space:nowrap; font-size:12px; min-height:34px; }
+#chasidica-concept .ch-map-label[aria-pressed="true"] { background:var(--ch-active); border-color:var(--ch-gold); }
+#chasidica-concept .ch-map-note { padding:0 20px 15px; font-size:12px; color:var(--ch-muted); }
+#chasidica-concept .ch-panel { padding:20px; border-left:1px solid var(--ch-line); background:var(--ch-paper); }
+#chasidica-concept .ch-eyebrow { color:var(--ch-muted); text-transform:uppercase; letter-spacing:.08em; font-size:11px; }
+#chasidica-concept .ch-panel h3 { font:24px/1.25 Georgia,serif; margin:8px 0 16px; }
+#chasidica-concept .ch-fact { display:flex; justify-content:space-between; gap:12px; margin:7px 0; font-variant-numeric:tabular-nums; }
+#chasidica-concept .ch-fact span { color:var(--ch-muted); }
+#chasidica-concept .ch-issue { margin:17px 0; padding:12px 0; border-top:1px solid var(--ch-line); border-bottom:1px solid var(--ch-line); }
+#chasidica-concept .ch-issue strong { display:block; font-weight:500; }
+#chasidica-concept .ch-issue small { display:block; font-size:12px; color:var(--ch-muted); margin-top:5px; }
+#chasidica-concept .ch-choice { width:100%; display:block; text-align:left; padding:12px; border:1px solid var(--ch-line); background:var(--ch-paper); border-radius:6px; margin:10px 0; }
+#chasidica-concept .ch-choice:hover { background:var(--ch-active); }
+#chasidica-concept .ch-choice span { display:block; font-size:12px; color:var(--ch-muted); margin-top:3px; }
+#chasidica-concept .ch-choice[aria-pressed="true"] { border-color:var(--ch-gold); background:var(--ch-active); }
+#chasidica-concept .ch-footer { display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:center; padding:13px 20px; border-top:1px solid var(--ch-line); }
+#chasidica-concept .ch-clock { display:flex; align-items:center; flex-wrap:wrap; gap:12px; }
+#chasidica-concept .ch-clock span { color:var(--ch-muted); font-size:12px; }
+#chasidica-concept .ch-advance { background:var(--ch-deep); color:#fff; border:0; border-radius:5px; padding:10px 14px; min-height:40px; }
+#chasidica-concept button:disabled { cursor:default; opacity:.55; }
+#chasidica-concept .ch-log { font-size:12px; color:var(--ch-muted); max-width:460px; }
+@media (max-width:760px) { #chasidica-concept .ch-main { grid-template-columns:1fr; } #chasidica-concept .ch-panel { border-left:0; border-top:1px solid var(--ch-line); } #chasidica-concept .ch-actions { display:grid; grid-template-columns:1fr 1fr; gap:10px; } #chasidica-concept .ch-choice { margin:0; } }
+@media (max-width:420px) { #chasidica-concept .ch-header { padding:14px; } #chasidica-concept .ch-resources { gap:18px; } #chasidica-concept .ch-actions { grid-template-columns:1fr; } #chasidica-concept .ch-panel { padding:16px; } #chasidica-concept .ch-map-title { padding:13px 14px 0; } }
+@media (pointer:coarse) { #chasidica-concept .ch-map-label { min-height:44px; } }
+</style>
+<div id="chasidica-concept" aria-label="Chasidica neighborhood concept">
+  <header class="ch-header">
+    <div><div class="ch-brand">CHASIDICA</div><div class="ch-subtitle">Neighborhood concept · fictional scenario</div></div>
+    <div class="ch-resources"><div class="ch-resource"><span>Households</span>100</div><div class="ch-resource"><span>Community funds</span><output id="ch-money">$180,000</output></div></div>
+  </header>
+  <div class="ch-main">
+    <section class="ch-town" aria-label="Neighborhood view">
+      <div class="ch-map-title"><span>East Borough</span><small>Your first neighborhood</small></div>
+      <div class="ch-scene" id="ch-scene"><svg id="ch-city" role="img" aria-label="A miniature neighborhood with a shul, school, shops, apartments, and an available annex"></svg><div id="ch-map-labels"></div></div>
+      <div class="ch-map-note">Shul · school · apartments · shops · park</div>
+    </section>
+    <aside class="ch-panel" id="ch-panel" aria-label="Selected institution"></aside>
+  </div>
+  <footer class="ch-footer">
+    <div class="ch-clock"><strong id="ch-date">September 2028</strong><span id="ch-time-state">Paused</span><button type="button" class="ch-advance" id="ch-next" disabled>Next month →</button></div>
+    <div class="ch-log" id="ch-log" aria-live="polite">School enrollment: 20 children waiting for places.</div>
+  </footer>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('chasidica-concept');
+  const scene = root.querySelector('#ch-scene');
+  const svg = root.querySelector('#ch-city');
+  const labels = root.querySelector('#ch-map-labels');
+  const panel = root.querySelector('#ch-panel');
+  const money = root.querySelector('#ch-money');
+  const next = root.querySelector('#ch-next');
+  const date = root.querySelector('#ch-date');
+  const log = root.querySelector('#ch-log');
+  const state = { selected:'school', plan:null, month:0, camera:'miniature' };
+  const ns = 'http://www.w3.org/2000/svg';
+  const buildings = [
+    {id:'shul',x:1.1,y:1.1,w:2.8,d:2.4,h:70,color:'green'},
+    {id:'homes1',x:5.2,y:1.1,w:2.5,d:2.4,h:94,color:'brick'},
+    {id:'shops',x:9.4,y:1.1,w:2.9,d:2.4,h:40,color:'brick'},
+    {id:'homes2',x:1.1,y:5.2,w:2.8,d:2.4,h:90,color:'brick'},
+    {id:'school',x:5.2,y:5.2,w:2.6,d:2.4,h:51,color:'green'},
+    {id:'annex',x:9.4,y:5.2,w:2.9,d:2.4,h:34,color:'brick'},
+    {id:'homes3',x:5.2,y:9.4,w:2.6,d:2.4,h:79,color:'brick'},
+    {id:'homes4',x:9.4,y:9.4,w:2.9,d:2.4,h:61,color:'brick'}
+  ];
+  function make(tag,attrs,parent=svg) {
+    const node=document.createElementNS(ns,tag);
+    Object.entries(attrs).forEach(([k,v]) => node.setAttribute(k,v));
+    parent.appendChild(node); return node;
+  }
+  function drawCity() {
+    const width=scene.clientWidth || 700;
+    const scale=width/730;
+    const flat=state.camera==='plan';
+    const height=flat ? width*.69 : width*.58+86;
+    svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
+    svg.style.height=`${height}px`;
+    svg.replaceChildren(); labels.replaceChildren();
+    const title=make('title',{}); title.textContent='East Borough: your school and the available building next door';
+    function point(x,y,z=0) {
+      return flat ? [width*.055+x*width*.065,width*.025+y*width*.044] : [width/2+(x-y)*25*scale,85+(x+y)*12.5*scale-z*scale];
+    }
+    function poly(points,fill,attrs={}) { return make('polygon',{points:points.map(p=>p.join(',')).join(' '),fill,...attrs}); }
+    function tile(x,y,w,d,fill,z=0,attrs={}) { return poly([point(x,y,z),point(x+w,y,z),point(x+w,y+d,z),point(x,y+d,z)],fill,attrs); }
+    tile(0,0,13.5,13.5,'var(--ch-pave)');
+    [4.05,8.15].forEach(v => {tile(v,0,1,13.5,'var(--ch-road)');tile(0,v,13.5,1,'var(--ch-road)');});
+    tile(1,9.4,2.9,2.6,'var(--ch-green)');
+    [[1.6,10.1],[3,10.1],[1.9,11.4],[3,11.5],[12.9,2],[.5,7.2]].forEach(([x,y])=>{
+      const p=point(x,y);make('ellipse',{cx:p[0],cy:p[1],rx:9*scale,ry:5*scale,fill:'var(--ch-deep)',opacity:'.2'});
+      const c=point(x,y,14);make('circle',{cx:c[0],cy:c[1],r:10*scale,fill:'var(--ch-green)'});
+    });
+    [...buildings].sort((a,b)=>(a.x+a.y)-(b.x+b.y)).forEach(b=>{
+      let h=b.h;
+      if(b.id==='school' && state.plan==='build' && state.month===6) h+=27;
+      const occupied=b.id==='annex' && state.plan==='lease' && state.month===1;
+      const green=b.color==='green'||occupied;
+      const front=green?'var(--ch-green)':'var(--ch-brick)';
+      const side=green?'var(--ch-deep)':'var(--ch-brick-side)';
+      const roof=green?'var(--ch-green)':'var(--ch-roof)';
+      if(state.selected===b.id) tile(b.x-.17,b.y-.17,b.w+.34,b.d+.34,'var(--ch-gold)');
+      if(!flat) {
+        tile(b.x+.3,b.y+.2,b.w,b.d,'#0002');
+        poly([point(b.x,b.y+b.d),point(b.x+b.w,b.y+b.d),point(b.x+b.w,b.y+b.d,h),point(b.x,b.y+b.d,h)],front);
+        poly([point(b.x+b.w,b.y),point(b.x+b.w,b.y+b.d),point(b.x+b.w,b.y+b.d,h),point(b.x+b.w,b.y,h)],side);
+        for(let floor=14;floor<h-8;floor+=20) {
+          for(let k=.45;k<b.w-.25;k+=.7) poly([point(b.x+k,b.y+b.d,floor),point(b.x+k+.22,b.y+b.d,floor),point(b.x+k+.22,b.y+b.d,floor+8),point(b.x+k,b.y+b.d,floor+8)],'var(--ch-window)');
+          for(let k=.4;k<b.d-.2;k+=.7) poly([point(b.x+b.w,b.y+k,floor),point(b.x+b.w,b.y+k+.2,floor),point(b.x+b.w,b.y+k+.2,floor+8),point(b.x+b.w,b.y+k,floor+8)],'var(--ch-window)');
+        }
+      }
+      tile(b.x,b.y,b.w,b.d,roof,flat?0:h);
+      tile(b.x+.35,b.y+.35,b.w-.7,b.d-.7,side,flat?0:h+.8);
+      if(['shul','school','annex'].includes(b.id)) {
+        const p=point(b.x+b.w/2,b.y+b.d/2,flat?0:h+16);
+        const label=document.createElement('button');
+        label.type='button';label.className='ch-map-label';label.style.left=`${p[0]}px`;label.style.top=`${p[1]}px`;
+        label.setAttribute('aria-pressed',String(state.selected===b.id));
+        label.textContent=b.id==='shul'?'Shul':b.id==='school'?'School':occupied?'School annex':'Available annex';
+        label.addEventListener('click',()=>{state.selected=b.id;render();});labels.appendChild(label);
+      }
+    });
+    [[4.5,2.5],[4.5,7],[8.6,10],[2.5,8.6],[10.6,4.5],[7,4.5]].forEach(([x,y],i)=>{
+      const p=point(x,y,3);make('circle',{cx:p[0],cy:p[1],r:2.3*scale,fill:i%2?'var(--ch-ink)':'var(--ch-gold)'});
+    });
+    [[4.25,10.5],[8.4,2]].forEach(([x,y])=>tile(x,y,.43,.8,'var(--ch-paper)',2));
+  }
+  function renderPanel() {
+    const complete=state.plan==='lease'?state.month===1:state.plan==='build'&&state.month===6;
+    if(state.selected==='shul') {
+      panel.innerHTML='<div class="ch-eyebrow">The heart of the court</div><h3>Beis medrash</h3><div class="ch-fact"><span>Affiliated households</span>100</div><div class="ch-fact"><span>Premises</span>Rented</div><div class="ch-issue"><strong>Reb Mendel · administrator</strong><small>Priority: school places for every family.</small></div><button type="button" class="ch-choice" data-select="school">Review the school<span>Capacity, costs, and expansion</span></button>';
+    } else if(state.selected==='annex') {
+      panel.innerHTML=`<div class="ch-eyebrow">Property next door</div><h3>${complete&&state.plan==='lease'?'School annex':'Empty storefront'}</h3><div class="ch-fact"><span>Possible classrooms</span>2</div><div class="ch-fact"><span>Additional places</span>30</div><div class="ch-fact"><span>Monthly rent</span>$4,000</div><div class="ch-issue"><strong>${complete&&state.plan==='lease'?'Classrooms open':state.plan==='lease'?'Conversion underway':'Available to lease'}</strong><small>$30,000 to convert · 1 month</small></div><button type="button" class="ch-choice" data-select="school">School expansion plan<span>Compare with adding a floor</span></button>`;
+    } else {
+      const capacity=complete?(state.plan==='lease'?130:160):100;
+      const issue=complete?'Every child has a place':state.plan==='lease'?'Annex conversion underway':state.plan==='build'?`Construction · month ${state.month} of 6`:'20 children need places';
+      const detail=complete?(state.plan==='lease'?'30 extra places · $4,000 monthly rent':'60 extra places · construction complete'):state.plan==='lease'?'30 extra places available next month':state.plan==='build'?'60 extra places when the new floor opens':'The autumn intake exceeds capacity.';
+      panel.innerHTML=`<div class="ch-eyebrow">Your institutions</div><h3>The school</h3><div class="ch-fact"><span>Children needing places</span>120</div><div class="ch-fact"><span>Available places</span>${capacity}</div><div class="ch-issue"><strong>${issue}</strong><small>${detail}</small></div><div class="ch-actions"><button type="button" class="ch-choice" data-plan="lease" aria-pressed="${state.plan==='lease'}">Lease next door<span>$30k setup + $4k per month</span><span>30 new places · ready in 1 month</span></button><button type="button" class="ch-choice" data-plan="build" aria-pressed="${state.plan==='build'}">Add a floor<span>$150k construction</span><span>60 new places · ready in 6 months</span></button></div>`;
+    }
+    panel.querySelectorAll('[data-select]').forEach(button=>button.addEventListener('click',()=>{state.selected=button.dataset.select;render();}));
+    panel.querySelectorAll('[data-plan]').forEach(button=>button.addEventListener('click',()=>{if(state.plan===button.dataset.plan)return;state.plan=button.dataset.plan;state.month=0;render();}));
+  }
+  function render() {
+    const remaining=state.plan==='lease'?150000-state.month*4000:state.plan==='build'?30000:180000;
+    money.textContent=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(remaining);
+    date.textContent=new Date(Date.UTC(2028,8+state.month,1)).toLocaleDateString('en-US',{month:'long',year:'numeric',timeZone:'UTC'});
+    next.disabled=!state.plan||(state.plan==='lease'?state.month>=1:state.month>=6);
+    root.querySelector('#ch-time-state').textContent='Paused';
+    log.textContent=!state.plan?'School enrollment: 20 children waiting for places.':state.plan==='lease'?(state.month?'The annex opens. All 120 children now have places.':'$30,000 committed to converting the storefront.'):(state.month===6?'The new floor opens. All 120 children now have places.':`$150,000 committed. The school remains short of places during construction.`);
+    renderPanel();drawCity();
+  }
+  next.addEventListener('click',()=>{if(!next.disabled){state.month++;render();}});
+  new ResizeObserver(drawCity).observe(scene);
+  render();
+  if(globalThis.Tweak) {
+    const tweak=new Tweak({container:root,onChange:render});
+    tweak.addSelect(state,'camera',{label:'Neighborhood view',options:[{label:'Miniature city',value:'miniature'},{label:'Street plan',value:'plan'}]});
+  }
+})();
+</script>

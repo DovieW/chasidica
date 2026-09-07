@@ -1,0 +1,16 @@
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor, operating-system, and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+
+# Godot-generated cache, if the proposed engine is adopted
+.godot/
