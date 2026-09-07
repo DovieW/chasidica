@@ -11,6 +11,7 @@ Started 2026-09-06. This file records planning decisions without treating every 
 | A living miniature neighborhood viewed from above is the starting direction for the main view. | Accepted after discussing and viewing the interaction sketch. |
 | Early play should make a small community and its first permanent home feel meaningful. | Supported in the follow-up discussion about growing from a rented shtiebel. |
 | Lots of cool moments and novel experiences, especially unexpected and joyful ones, are central to the fun. | Explicitly emphasized on 2026-09-06. |
+| Graphics and music deserve careful attention as part of the game's enjoyment. | Explicitly emphasized in the follow-up planning discussion on 2026-09-06. |
 | Keep planning notes in this folder and establish a public GitHub repository with a first commit. | Explicit project instruction on 2026-09-06. |
 
 ## Working proposals
@@ -34,6 +35,8 @@ The rough sketch's costs, dates, household count, capacities, and deterministic 
 
 ### The next planning discussion
 
+Use [Graphics, music, and the whole experience](experience-direction.md) to work through presentation and feature choices alongside these questions. Its specific recommendations remain provisional.
+
 1. Which moments should the player be able to create, which should arise spontaneously, and which should be anticipated calendar occasions?
 2. What is the smallest collection of people, places, and interactions that could produce several different satisfying stories?
 3. How does the player discover possibilities through the world, conversations, and exploration?
@@ -47,7 +50,6 @@ The rough sketch's costs, dates, household count, capacities, and deterministic 
 - Simulation detail for individuals, households, institutions, money, property, and politics.
 - How much construction and interior customization the player directly controls.
 - Cultural scope, terminology, calendar treatment, and ways to represent differences between communities.
-- Audio and visual presentation of ordinary life and special occasions.
 - Succession, rivalries, splits, reconciliation, setbacks, and possible failure states.
 - The comic world-domination victory condition and whether campaigns can continue afterward.
 - Accessibility, target platforms, controls, and saving.
@@ -68,3 +70,7 @@ The main view was accepted as a useful starting direction. Follow-up discussion 
 Established unexpected, joyful, novel experiences as a core design priority. Began a moment bank and proposals for connecting those experiences to player agency, independently acting residents, the calendar, discovery, and remembered history.
 
 The current task is planning and recording ideas. The next stage is to make the intended fun concrete enough to evaluate a small prototype. No production game implementation has been approved or started by these notes.
+
+### 2026-09-06 — Plan graphics and music with gameplay
+
+Added graphics and music as explicit creative priorities. Began a discussion guide linking visual style, musical identity, sound, player decisions, and possible features through a shared scene. The style, soundtrack, and feature recommendations are proposals awaiting discussion.

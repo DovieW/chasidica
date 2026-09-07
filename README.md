@@ -16,6 +16,7 @@ Picture a living miniature neighborhood viewed from above. Click buildings and p
 
 - [Vision and player experience](docs/vision.md): the game we are imagining and what a session could feel like.
 - [Designing for fun](docs/fun.md): proposals for surprise, joy, discovery, agency, and lasting stories.
+- [Graphics, music, and the whole experience](docs/experience-direction.md): presentation choices and how possible features support the intended experience.
 - [Moment bank](docs/moments.md): concrete experience ideas to explore, not a committed feature list.
 - [Decisions and open questions](docs/decisions.md): what has been agreed, what is provisional, and what to discuss next.
 
