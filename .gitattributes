@@ -1,0 +1,3 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Keep the publisher's license text byte-for-byte, including its final blank line.
+LICENSES/CC-BY-SA-4.0.txt whitespace=-blank-at-eof

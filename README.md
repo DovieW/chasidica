@@ -4,7 +4,7 @@ A modern Hasidic community and dynasty simulation, growing from a rented shtiebe
 
 Build a community you care about, and look forward to what happens next.
 
-**Status:** complete design v1 selected; mechanical prototyping is next. There is no playable game yet.
+**Status:** open-source project with design v1 selected; mechanical prototyping is next. There is no playable game yet.
 
 ## What should make it fun?
 
@@ -37,6 +37,12 @@ No dependencies are required beyond Node.js. This checks a design fixture, not t
 
 ## Visual concept
 
+[Early-, middle-, and late-game image gallery](output/concepts/README.md): three AI-generated concepts showing the intended progression, with the exact prompts and provenance. These are visual targets, not screenshots of a running game or production-ready assets.
+
 [The neighborhood interaction sketch](output/chasidica-concept.html) explores selecting buildings, choosing a school expansion, and advancing time to see the result. It is a self-contained HTML fragment from the planning conversation, with an optional host-provided view selector. Its numbers and outcomes are illustrative; it is not the simulation or a settled art direction. It can be opened locally in a modern browser; GitHub displays its source.
 
-The selected production technology is Godot 4.7.2 with modular GLB assets, for Windows and Linux. The target product is a premium offline game with a free opening-chapter demo. The public repository does not grant a blanket license to original game work; third-party material retains its own terms.
+The selected production technology is Godot 4.7.2 with modular GLB assets, for Windows and Linux. Development is open-source and offline-first. Free playable builds and feedback come first; paid official builds or supporter funding remain optional, with no committed price or revenue expectation.
+
+## License and contributions
+
+Software is **GPL-3.0-or-later**. Original writing and standalone creative assets are **CC BY-SA 4.0**, unless separately marked. Third-party material retains its own terms. See [licensing and attribution](LICENSING.md), the [GPL text](LICENSE), the [CC license text](LICENSES/CC-BY-SA-4.0.txt), and [contribution guidance](CONTRIBUTING.md).

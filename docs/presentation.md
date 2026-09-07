@@ -2,6 +2,8 @@
 
 Selected direction v1, 2026-09-06. This resolves the options in the earlier [experience discussion](experience-direction.md).
 
+The [early/middle/late concept gallery](../output/concepts/README.md) makes this direction visible. Its AI-generated images share a visual brief and recurring landmarks, with exact prompts and provenance recorded. They are aspirational concepts, not implemented screens or additions to the feature budget.
+
 ## Visual identity
 
 Create a warm, detailed miniature city with expressive people and recognizable communal spaces. Buildings have believable proportions with slightly simplified geometry. Craft comes from silhouettes, material variation, light, signage, window activity, props, and animation.

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 Chasidica contributors
 // Analytical design check only: this is not the production simulator.
 // Run from any directory: node /path/to/chasidica/design/check-fixtures.mjs
 import assert from 'node:assert/strict';

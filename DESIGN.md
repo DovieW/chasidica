@@ -1,6 +1,6 @@
 # Chasidica — complete design, version 1
 
-Decision date: 2026-09-06. The user delegated the remaining design decisions. This document and the specifications it links are the selected direction, superseding the earlier exploratory options.
+Decision date: 2026-09-06. The user delegated the remaining design decisions and subsequently approved open-source development with optional monetization. This document and the specifications it links are the selected direction, superseding the earlier exploratory options.
 
 This is a complete product and gameplay blueprint, not a claim that the game has been built or that its fun has been demonstrated. Numbers are starting balance values or explicit production targets. Change them when evidence warrants a revision; record the reason.
 
@@ -26,8 +26,8 @@ The player guides the court across generations. The rebbe and family are importa
 | Time baseline | One simulation week per four real seconds at 1x, excluding pauses; this is a tuning value. |
 | Platforms | Windows and Linux desktop, keyboard and mouse. |
 | Technology | Godot 4.7.2, typed GDScript, Compatibility renderer, modular Blender assets exported as GLB. |
-| Business model | Premium offline game, target US list price $24.99, free opening-chapter demo. These are product decisions, not published offers. |
-| Development model | Public planning/development repository; original game work retains its rights. Third-party material keeps its own license and attribution. |
+| Business model | Open-source, offline-first game. Free playable builds and feedback first; paid official builds or supporter funding are optional. No committed price or revenue expectation. |
+| Development model | Public repository; GPL-3.0-or-later software and CC BY-SA 4.0 original writing/standalone creative assets, with explicit third-party exceptions. See [licensing](LICENSING.md). |
 | Runtime content | Authored and procedural rules with reproducible seeds; no runtime generative-AI service or account requirement. |
 
 ## What the player actually does

@@ -101,7 +101,7 @@ Stages are ordered by evidence, not calendar promises. A failed gate means revis
 | 2. A working neighborhood | Complete chapters 1–2: bounded construction, business and household service rules, mentoring, agreements, calendar, three starting groups, and recurring positive life. | Players can sustain and reshape a neighborhood without repeated busywork; financial and service forecasts remain trustworthy. |
 | 3. An enduring dynasty | Regional expansion, at least two linked campuses, stewards, charters, leadership transition, split/reconciliation, population aggregation. | A real transition is playable and legible; delegated institutions obey budgets; scale does not multiply routine commands. |
 | 4. Complete campaign | All 24 world nodes, charter progression, six-region service packages, the Great Gathering, optional continuation, and the full bounded content catalogue. | Multiple paths reach a complete ending; failure/retry works; the finale tests familiar mechanics. |
-| 5. Release candidate | Balance, accessibility, culture/audio review, hardware tests, credits/licenses, offline exports, opening-chapter demo. | Full campaigns and all recovery paths pass; no known save-loss or progression-blocking bug; user-visible checks below completed. |
+| 5. Release candidate | Balance, accessibility, culture/audio review, hardware tests, credits/licenses, reproducible offline builds and corresponding source, opening-chapter sampler. | Full campaigns and all recovery paths pass; no known save-loss or progression-blocking bug; user-visible checks below completed. |
 
 Stage 0 includes only enough character ability and negotiation to make the allocation alternatives legible. It does not include world travel, lineage simulation, a general event director, or a large building kit. The retained HTML concept is not this prototype.
 
@@ -127,13 +127,15 @@ If the gate fails, make two focused rule revisions and retest. Revise the availa
 
 ## Ownership, roles, and spending
 
-Use the public repository for design, reviewed implementation, and safe development assets. Public visibility is not a blanket open-source license: original game work retains its rights. Every third-party asset and library has an origin, license, allowed use, attribution, and source record. Do not commit private playtest recordings, credentials, purchased source packages without redistribution rights, or unlicensed music.
+Use the public repository for open-source design, reviewed implementation, and safe development assets. Original software is GPL-3.0-or-later; original documentation and standalone artwork/music are CC BY-SA 4.0 unless separately marked. Contributors retain their rights under these grants. [LICENSING.md](../LICENSING.md) defines the boundaries, full texts, attribution, and exceptions. Every third-party asset and library has an origin, license, allowed use, attribution, and source record. Do not commit private playtest recordings, credentials, purchased source packages without redistribution rights, or unlicensed music. Prefer an asset pipeline that allows others to build and run the complete game using redistributable inputs.
 
-The product is a premium offline game with a target US list price of $24.99 and a free opening-chapter demo. Launch targets are Steam for Windows/Linux and DRM-free Windows/Linux builds on itch.io. The same simulation and saves underpin both. Store integration is optional to play; achievements, cloud saves, other operating systems, consoles, and controllers are outside the launch requirement. Store accounts, fees, submission, pricing publication, and distribution contracts require actual owner authorization when execution reaches them.
+The product is an open-source offline game for Windows/Linux. Publish free playable builds with corresponding source as milestones become usable, and collect feedback before making a business commitment. A free opening-chapter sampler remains useful for onboarding and playtesting, not as an exclusive route through a payment gate. GitHub releases are the initial distribution route; itch.io and a paid official Steam build are optional later channels. Supporter bundles and donations are also options, not forecast income. The earlier $24.99 target is withdrawn; no replacement price is selected.
+
+The same simulation and saves underpin free and any later commercial builds. Commercial distribution must preserve the applicable license permissions and source access. Store integration is optional to play; achievements, cloud saves, other operating systems, consoles, and controllers are outside the launch requirement. Store accounts, fees, submission, pricing publication, and distribution contracts require actual owner authorization when execution reaches them. Do not add an incompatible proprietary SDK without resolving its license compatibility.
 
 The work requires simulation/UI engineering, environment/character art, animation, composition/performance, writing, cultural review, and QA. One person may cover multiple roles, but each quality gate still applies. Build the prototype with in-repo placeholders. Obtain a composer/performer and cultural-review plan before final content production; prepare briefs and asset lists before commissioning work.
 
-No external spending or hiring is authorized by this design pass. The present authorized external-production budget is $0. Design autonomy resolves the product choices; it does not create a financial commitment. Scope stays fixed unless playtests justify a recorded revision.
+No external spending or hiring is authorized by this design pass. The present authorized external-production budget is $0. Design autonomy resolves the product choices; it does not create a financial commitment. Do not budget against hypothetical future sales, donations, or volunteer labor. Scope stays fixed unless playtests justify a recorded revision.
 
 ## Release checklist
 
@@ -143,7 +145,7 @@ No external spending or hiring is authorized by this design pass. The present au
 - Verify no required action depends on color, sound, a tiny target, or an unmapped mouse gesture.
 - Review culturally sensitive content and original music in the actual scenes, not only in prose.
 - Confirm asset provenance, dependency notices, font/recording rights, and store-build exclusions.
-- Make the free demo end after the first permanent-home celebration; retain its save for continuation in the full game.
+- Make the opening-chapter sampler end after the first permanent-home celebration; retain its save for continuation in the full game, without requiring a commercial purchase.
 - Publish only the minimum specifications actually demonstrated by testing. Supply a short known-issues list and save-backup instructions.
 
 The immediate next implementation task is Stage 0, not a city generator or full campaign framework. [Validation](validation.md) records exactly what this design pass has and has not established.

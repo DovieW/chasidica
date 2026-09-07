@@ -35,8 +35,8 @@ These choices were made under the user's design delegation. They do not claim hu
 | Audio | Three original motifs in three arrangements plus three additional cues; culturally appropriate vocal/instrument treatment. | [Presentation](presentation.md) |
 | Content | Bounded catalogue: 18 programs, 36 improvements, 30 traits, 120 event seeds, 24 occasion compositions. | [Presentation](presentation.md) |
 | Tech | Godot 4.7.2, typed GDScript, Compatibility renderer, Blender-to-GLB assets; offline rule-driven simulation. | [Production](production.md) |
-| Release | Windows/Linux keyboard-and-mouse premium game; target $24.99; opening-chapter demo; Steam and itch.io distribution targets. | [Production](production.md) |
-| Rights | Public development repository, original rights retained, explicit third-party provenance and licenses. | [Production](production.md) |
+| Release | Windows/Linux keyboard-and-mouse open-source game; free builds first, optional commercial distribution or supporter funding later; no committed price. | [Production](production.md) |
+| Rights | Public repository; GPL-3.0-or-later software and CC BY-SA 4.0 original writing/standalone creative assets; explicit third-party provenance and exceptions. | [Licensing](../LICENSING.md) |
 | Validation | Arithmetic check now; interactive mechanics prototype and observed play before expanding production. | [Validation](validation.md) |
 
 The rough sketch's costs, dates, household count, capacities, and deterministic outcomes are examples only. It does not decide the final economy or time model.
@@ -78,3 +78,9 @@ The discussion was redirected toward actual gaming mechanics and established pri
 The user authorized autonomous design decisions and requested a summary. Selected the project-combination core and resolved the campaign, authority, economy, social simulation, succession, world finale, presentation, technology, release scope, and production order. Retained earlier exploratory notes as history with clear supersession notices.
 
 Added a reusable numerical fixture and checker. All four counterfactual scenarios passed; sharing, leasing, and borrowing each become preferred under specified conditions. Recorded that arithmetic consistency does not establish enjoyment. The next deliverable is a small interactive mechanics prototype, followed by explicit observed-play gates.
+
+### 2026-09-06 — Open-source development and progression concepts
+
+The user approved keeping the repository public, choosing open-source licensing, and making monetization optional. Applied GPL-3.0-or-later to software and CC BY-SA 4.0 to original prose and standalone creative assets, with third-party exceptions and clear contribution terms. Withdrew the untested $24.99 target; free playable builds and evidence from players come first. Paid official builds or supporter funding remain possible under the licenses, without a revenue assumption or spending commitment.
+
+The user requested three images showing early, middle, and late play. The [progression gallery](../output/concepts/README.md) records the generated concepts, prompts, and provenance. These are visual targets for discussion, not a claim of an implemented game or validated renderer performance.

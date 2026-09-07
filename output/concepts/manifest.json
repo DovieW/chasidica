@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-09-06",
+  "project_timezone": "America/New_York",
+  "purpose": "AI-generated visual concepts; not screenshots, production assets, or measured renderer output.",
+  "generation": {
+    "mode": "built-in",
+    "tool": "image_gen",
+    "skill": "imagegen",
+    "references": [],
+    "method": "Three separate new generations using a shared art direction and recurring landmark descriptions.",
+    "postprocessing": "None. Original generated PNGs copied without modification."
+  },
+  "attribution": "Chasidica contributors; AI-generated concepts directed and selected for this project.",
+  "license": "CC-BY-SA-4.0",
+  "license_scope": "Only rights the project can grant; see ../../LICENSING.md.",
+  "review": {
+    "inspected": true,
+    "checks": [
+      "Three distinct campaign stages",
+      "Shared warm miniature-city palette",
+      "Shtiebel and bakery landmark motifs",
+      "Primary English labels readable",
+      "Peaceful community activity and project-planning interface"
+    ],
+    "limitations": [
+      "Building geometry and precise positions vary between independent generations.",
+      "Small Hebrew signage is illustrative and not culturally or linguistically approved for production.",
+      "Unlabeled interface meters, icons, numbers, and map routes do not override the gameplay specification.",
+      "Visual polish and crowd density are aspirational; no Godot performance validation has occurred."
+    ]
+  },
+  "assets": [
+    {
+      "file": "early-game.png",
+      "stage": "early",
+      "mime_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2694752,
+      "sha256": "f47b8e05c151cf644e948813583eee6a1f9254c64d5f2f0044490bfc12b1f708",
+      "prompt": "prompts.md#early-game"
+    },
+    {
+      "file": "middle-game.png",
+      "stage": "middle",
+      "mime_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2819929,
+      "sha256": "33491b98c1175a45f04c466d2457fd4385186612469be37d20c0608c7aabd891",
+      "prompt": "prompts.md#middle-game"
+    },
+    {
+      "file": "late-game.png",
+      "stage": "late",
+      "mime_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2703281,
+      "sha256": "99cdbd550221342d6490034c04fd36af035c8a0c64f88a860f229b574838e762",
+      "prompt": "prompts.md#late-game"
+    }
+  ]
+}
