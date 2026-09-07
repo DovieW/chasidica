@@ -14,6 +14,7 @@ Picture a living miniature neighborhood viewed from above. Click buildings and p
 
 ## Design notes
 
+- [Game-design principles and tests](docs/game-design-principles.md): the current priority of defining and testing a satisfying core mechanic.
 - [Vision and player experience](docs/vision.md): the game we are imagining and what a session could feel like.
 - [Designing for fun](docs/fun.md): proposals for surprise, joy, discovery, agency, and lasting stories.
 - [Graphics, music, and the whole experience](docs/experience-direction.md): presentation choices and how possible features support the intended experience.

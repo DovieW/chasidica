@@ -12,6 +12,7 @@ Started 2026-09-06. This file records planning decisions without treating every 
 | Early play should make a small community and its first permanent home feel meaningful. | Supported in the follow-up discussion about growing from a rented shtiebel. |
 | Lots of cool moments and novel experiences, especially unexpected and joyful ones, are central to the fun. | Explicitly emphasized on 2026-09-06. |
 | Graphics and music deserve careful attention as part of the game's enjoyment. | Explicitly emphasized in the follow-up planning discussion on 2026-09-06. |
+| The next design priority is finding the fun in actual gameplay mechanics. | The planning discussion was explicitly redirected toward mechanics and game-design principles on 2026-09-06. |
 | Keep planning notes in this folder and establish a public GitHub repository with a first commit. | Explicit project instruction on 2026-09-06. |
 
 ## Working proposals
@@ -35,13 +36,13 @@ The rough sketch's costs, dates, household count, capacities, and deterministic 
 
 ### The next planning discussion
 
-Use [Graphics, music, and the whole experience](experience-direction.md) to work through presentation and feature choices alongside these questions. Its specific recommendations remain provisional.
+Start with [Game-design principles and tests](game-design-principles.md). The earlier [presentation guide](experience-direction.md) remains relevant, but its specific recommendations are provisional.
 
-1. Which moments should the player be able to create, which should arise spontaneously, and which should be anticipated calendar occasions?
-2. What is the smallest collection of people, places, and interactions that could produce several different satisfying stories?
-3. How does the player discover possibilities through the world, conversations, and exploration?
-4. What new kinds of activity become available as the court grows?
-5. How can a first short session deliver accomplishment, discovery, surprise, and a reason to return?
+1. What repeatable activity does the player actually perform?
+2. Which rules and constraints make its decisions interesting?
+3. What can the player learn, discover, or become better at?
+4. Which changes in circumstances make a different approach attractive?
+5. What small playable test would help us retain, revise, or reject that mechanic?
 
 ### Later design decisions
 
@@ -74,3 +75,7 @@ The current task is planning and recording ideas. The next stage is to make the 
 ### 2026-09-06 — Plan graphics and music with gameplay
 
 Added graphics and music as explicit creative priorities. Began a discussion guide linking visual style, musical identity, sound, player decisions, and possible features through a shared scene. The style, soundtrack, and feature recommendations are proposals awaiting discussion.
+
+### 2026-09-06 — Find the fun in the mechanics
+
+The discussion was redirected toward actual gaming mechanics and established principles for making play enjoyable. Recorded a source-grounded framework and criteria for testing candidate mechanics. Updated the planning order so that repeated decisions, rules, learning, and alternatives receive explicit attention. Graphics, music, novel experiences, and joy remain important; no core mechanic has yet been validated through play.

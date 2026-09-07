@@ -2,6 +2,8 @@
 
 Initial planning proposals: 2026-09-06. The creative priority is agreed; the mechanisms below still need exploration and playtesting.
 
+Current priority: use the [game-design principles and tests](game-design-principles.md) to establish repeatable mechanical fun. The experiences described here remain targets, not evidence that the underlying game works.
+
 ## The creative priority
 
 The game should offer lots of cool moments and novel experiences: unexpected, joyful, and memorable.
@@ -72,7 +74,9 @@ Avoid rigid event quotas. Novelty fatigue and repetition both matter. A candidat
 
 Recurring celebrations can remain valuable even after their first appearance when the attendees, venue, traditions, or family history have changed.
 
-## A candidate first test
+## A candidate scene to support playtesting
+
+This scene can help test presentation and emotional payoff. A mechanical test also needs explicit actions, constraints, consequences, and alternative approaches, as described in the principles document.
 
 Before a large economic or dynasty simulation, test one small neighborhood with a handful of recurring characters, one adaptable property, and one anticipated communal occasion.
 

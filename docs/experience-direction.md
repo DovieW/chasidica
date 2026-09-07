@@ -80,10 +80,12 @@ This table is a set of design candidates, not a commitment to implement all of t
 
 ## Suggested order for discussion
 
-1. Choose an intended visual and musical feeling using a few concrete references or alternative treatments of the same scene.
-2. Work through the decisions a player would make during one short session.
-3. Choose a few moments that session should be capable of producing, including alternatives caused by different choices.
-4. Identify the smallest set of features that supports those moments.
-5. Decide what an initial prototype must demonstrate, including the quality needed to assess its graphics and sound fairly.
+Following the mechanics-focused planning correction, use the [game-design principles and tests](game-design-principles.md) as the starting point.
+
+1. Define a candidate core activity with explicit actions, constraints, consequences, and alternative approaches.
+2. Make that activity small enough to play repeatedly and evaluate what is enjoyable about doing it.
+3. Revise the rules based on what players actually do, discover, and find repetitive.
+4. Explore visual and musical treatments alongside this work, with enough presentation to communicate actions and assess the intended feeling.
+5. Expand the feature set around mechanics that show promise in play and moments those mechanics can support.
 
 Only after those choices are clearer should this become a production task list. The current work is planning and note-taking.
