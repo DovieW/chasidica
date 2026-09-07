@@ -1,6 +1,6 @@
 # Finding the fun: principles and tests
 
-Planning correction: 2026-09-06. The current design describes desirable experiences, but has not demonstrated a satisfying core mechanic. The next priority is to define and test repeatable play.
+Planning correction: 2026-09-06. The early design described desirable experiences without a defined core. [Design v1](../DESIGN.md) now selects project combinations as the primary activity and negotiation as its supporting mechanic. The next priority is to test whether repeating that activity is satisfying.
 
 These are practical design criteria, not a formula that guarantees enjoyment. The Chasidica examples and proposed tests below are our applications of the cited ideas.
 
@@ -11,7 +11,7 @@ These are practical design criteria, not a formula that guarantees enjoyment. Th
 - **Learning and mastery:** investigate what a player learns, which abilities they exercise, and whether new situations require changed tactics. This is a useful lens for strategy, rather than a complete definition of all enjoyment. [Raph Koster](https://www.raphkoster.com/2012/01/24/an-atomic-theory-of-fun-game-design/)
 - **Autonomy, competence, and relatedness:** research connects these need satisfactions with enjoyment and motivation. The PENS overview also highlights clear feedback, approachable controls, strategic freedom, and cooperative interaction. [Self-Determination Theory / PENS](https://selfdeterminationtheory.org/player-experience-of-needs-satisfaction-pens/)
 
-## Proposed criteria for Chasidica
+## Evaluation criteria for Chasidica
 
 | Principle | What to look for in play |
 | --- | --- |
@@ -30,9 +30,9 @@ These criteria should support the intended joy, surprise, and attachment. Diffic
 
 Buying a school is a theme-level action. To evaluate its gameplay, specify what the player controls and what can change the decision: location, room use, staff assignments, shared facilities, schedules, commitments, or timing.
 
-One candidate hypothesis is that combining people, places, and schedules creates satisfying discoveries. For example, sharing a kitchen between daytime classes and evening gatherings might make two projects possible within a limited property. That hypothesis needs actual rules for capacity, staff, cost, and scheduling, plus situations where a different arrangement is preferable. It has not been selected or tested.
+The selected hypothesis is that combining people, places, and schedules creates satisfying discoveries. For example, sharing a kitchen between daytime classes and evening gatherings might make two projects possible within a limited property. [The mechanics specification](mechanics.md) now defines capacity, staff, costs, scheduling, and counterfactual situations. [The numerical experiment](validation.md) checks some of those tradeoffs, but the hypothesis has not been tested with players.
 
-A contrasting candidate could make negotiation the central activity: identify what other people want, propose exchanges, and manage commitments that affect later opportunities. We should compare the repeatable decisions in these candidates before treating either as the game's foundation.
+A contrasting candidate makes negotiation central: identify what other people want, propose exchanges, and manage commitments that affect later opportunities. V1 uses this as support for project assembly. The [production plan](production.md) specifies when to test it as a replacement core if allocation does not produce enjoyable repeated play.
 
 ## A testable proposal must specify
 

@@ -2,6 +2,8 @@
 
 Planning notes: 2026-09-06.
 
+Historical discussion guide. The options below are superseded by [the selected presentation specification](presentation.md) and [design v1](../DESIGN.md); retain them as rationale and unused ideas, not an additional feature list.
+
 ## Priority
 
 Graphics and music need careful attention as part of what makes Chasidica enjoyable. The player's actions, presentation, and feature set should support a coherent experience.

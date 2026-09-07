@@ -2,6 +2,8 @@
 
 Initial idea bank: 2026-09-06. All entries are proposals, with fictional people and situations. They explore a range of experiences rather than define a production backlog.
 
+[Design v1](../DESIGN.md) now governs scope. Selected ideas must fit the [campaign's event rules](campaign.md) and [presentation's content budget](presentation.md); inclusion here does not promise implementation.
+
 ## Moments to discover and remember
 
 | ID | Moment | What makes it personal or interactive | What can last afterward |

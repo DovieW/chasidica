@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "purpose": "Isolated allocation experiment, not the full campaign economy or evidence of player enjoyment.",
+  "currency_unit": "whole fictional dollars; production accounting uses integer cents",
+  "horizon_weeks": 16,
+  "capital_ceiling": 10000,
+  "gross_weekly_operating_ceiling": 800,
+  "common_weekly_cost": 200,
+  "assumptions": [
+    "Appropriate equipment and three separate capable leads are available; common staff and reset costs are in the common weekly cost.",
+    "One activity occupies its entire room band, even if seats remain.",
+    "Access setup and recurring access cost are charged once per used room, not once per program.",
+    "The existing study group can move only as part of a complete feasible replacement plan.",
+    "The optional workshop is a pre-funded outside operator's contract: no additional court staff or capital, payment only for the unoccupied original hall daytime band.",
+    "All stated costs and optional contract payments persist for the whole 16-week horizon.",
+    "Operating allocation is funded separately from the capital envelope. The ceiling applies to gross cost before optional workshop revenue."
+  ],
+  "rooms": [
+    { "id": "main_hall", "capacity": 30, "bands": ["day", "evening"], "access_capital": 0, "weekly_access_cost": 0, "strategy": "share" },
+    { "id": "side_room", "capacity": 12, "bands": ["day", "evening"], "access_capital": 0, "weekly_access_cost": 0, "strategy": "share" },
+    { "id": "annex", "capacity": 30, "bands": ["day", "evening"], "access_capital": 6000, "weekly_access_cost": 500, "strategy": "lease" },
+    { "id": "partner_room", "capacity": 12, "bands": ["evening"], "access_capital": 1000, "weekly_access_cost": 100, "strategy": "borrow" }
+  ],
+  "programs": [
+    { "id": "school", "seats": 20, "band": "day", "setup_cost": 2000 },
+    { "id": "gathering", "seats": 24, "band": "evening", "setup_cost": 1000 },
+    { "id": "study", "seats": 10, "band": "evening", "setup_cost": 0, "existing_room": "main_hall", "relocation_cost": 1000 }
+  ],
+  "scenarios": [
+    {
+      "id": "ordinary_conditions",
+      "blocked_slots": [],
+      "unavailable_rooms": [],
+      "expected": { "optimal_strategies": ["share"], "capital": 4000, "gross_weekly": 200, "net_weekly": 200, "total_cost": 7200 }
+    },
+    {
+      "id": "workshop_offer",
+      "blocked_slots": [],
+      "unavailable_rooms": [],
+      "optional_contract": { "room": "main_hall", "band": "day", "weekly_revenue": 900 },
+      "expected": { "optimal_strategies": ["lease"], "capital": 9000, "gross_weekly": 700, "net_weekly": -200, "total_cost": 5800 }
+    },
+    {
+      "id": "side_room_committed",
+      "blocked_slots": [{ "room": "side_room", "band": "evening" }],
+      "unavailable_rooms": [],
+      "expected": { "optimal_strategies": ["borrow"], "capital": 5000, "gross_weekly": 300, "net_weekly": 300, "total_cost": 9800 }
+    },
+    {
+      "id": "no_partner_available",
+      "blocked_slots": [{ "room": "side_room", "band": "evening" }],
+      "unavailable_rooms": ["partner_room"],
+      "expected": { "optimal_strategies": ["lease"], "capital": 9000, "gross_weekly": 700, "net_weekly": 700, "total_cost": 20200 }
+    }
+  ]
+}

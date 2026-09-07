@@ -1,6 +1,6 @@
-# Decisions and open questions
+# Decision register and planning history
 
-Started 2026-09-06. This file records planning decisions without treating every proposed example as an approved feature.
+Started 2026-09-06. The user delegated the remaining design decisions on that date. [DESIGN.md](../DESIGN.md) and its linked specifications now define selected v1 scope. Examples outside those specifications remain ideas, not promised features.
 
 ## Agreed direction
 
@@ -15,46 +15,39 @@ Started 2026-09-06. This file records planning decisions without treating every 
 | The next design priority is finding the fun in actual gameplay mechanics. | The planning discussion was explicitly redirected toward mechanics and game-design principles on 2026-09-06. |
 | Keep planning notes in this folder and establish a public GitHub repository with a first commit. | Explicit project instruction on 2026-09-06. |
 
-## Working proposals
+## Selected v1 decisions
 
-These provide a coherent direction for discussion and can be revised.
+These choices were made under the user's design delegation. They do not claim human playtest validation.
 
-- Guide a persistent court or dynasty across generations.
-- Use a fictionalized New York setting with existing property owners, residents, businesses, and other communities.
-- Give households, leaders, teachers, donors, administrators, and neighbors meaningful agency and distinct priorities.
-- Use pausable time with speed controls and direct selection of people and places.
-- Let institutions grow through acquiring, adapting, connecting, and developing properties.
-- Show communal life and important outcomes directly in the neighborhood.
-- Let local administrators take on routine responsibilities as the player expands.
-- Escalate the scale gradually while retaining familiar characters, institutions, traditions, and comedy.
-- Explore authored moments combined with simulated relationships, discoveries, and persistent campaign history.
-- Consider Godot 4 and stylized modular assets; use Blender as a supporting asset tool if useful.
+| Area | Decision | Owning specification |
+| --- | --- | --- |
+| Player | Guide an enduring court; direct its resources and negotiate with autonomous people and institutions. No playable avatar. | [Design](../DESIGN.md) |
+| Repeated activity | Assemble projects through compatible spaces, schedules, capabilities, and agreements. Negotiation supports that core. | [Mechanics](mechanics.md) |
+| Sources of enjoyment | Discovery/mastery, expression, personal continuity, joyful life, and affectionate comedy. | [Design](../DESIGN.md) |
+| Simulation | Weekly pausable settlement; explicit capacities and commitments; household/cohort scale; no spendable influence or religious-worth meter. | [Mechanics](mechanics.md) |
+| Buildings | Acquire and adapt bounded functional zones; campuses contain up to four adjacent properties. | [Mechanics](mechanics.md) |
+| Start | East Borough, 2028, 100 households, rented hall and side room, a school-capacity problem, positive baseline operation. | [Campaign](campaign.md) |
+| Progression | Permanent home, functioning neighborhood, satellite, succession, world charters, Great Gathering. | [Campaign](campaign.md) |
+| Scale | At most three directly managed campuses; stewards handle others under actual budgets and constraints. | [Mechanics](mechanics.md) |
+| Victory | 12 charter cities across six continents, a stable compact, and a successful distributed Great Gathering; continue afterward. | [Campaign](campaign.md) |
+| Failure | Recovery, restructuring, and splits precede terminal institutional collapse; death is not game over. | [Design](../DESIGN.md) |
+| View | Warm stylized miniature 3D, orthographic camera, four rotations, functional room cutaways. | [Presentation](presentation.md) |
+| Audio | Three original motifs in three arrangements plus three additional cues; culturally appropriate vocal/instrument treatment. | [Presentation](presentation.md) |
+| Content | Bounded catalogue: 18 programs, 36 improvements, 30 traits, 120 event seeds, 24 occasion compositions. | [Presentation](presentation.md) |
+| Tech | Godot 4.7.2, typed GDScript, Compatibility renderer, Blender-to-GLB assets; offline rule-driven simulation. | [Production](production.md) |
+| Release | Windows/Linux keyboard-and-mouse premium game; target $24.99; opening-chapter demo; Steam and itch.io distribution targets. | [Production](production.md) |
+| Rights | Public development repository, original rights retained, explicit third-party provenance and licenses. | [Production](production.md) |
+| Validation | Arithmetic check now; interactive mechanics prototype and observed play before expanding production. | [Validation](validation.md) |
 
 The rough sketch's costs, dates, household count, capacities, and deterministic outcomes are examples only. It does not decide the final economy or time model.
 
-## Open questions
+## Revision and implementation policy
 
-### The next planning discussion
+Major design choices are resolved. Tuning numbers and engineering targets are deliberately testable starting points. Change a decision when a specific playtest, technical measurement, cultural review, or scope finding warrants it, and record the evidence and replacement here.
 
-Start with [Game-design principles and tests](game-design-principles.md). The earlier [presentation guide](experience-direction.md) remains relevant, but its specific recommendations are provisional.
+The next build is Stage 0 in the production plan. No extra design-choice questionnaire is required before that bounded prototype. A failed fun gate requires rule revision or replacement, not automatic expansion of the content bank.
 
-1. What repeatable activity does the player actually perform?
-2. Which rules and constraints make its decisions interesting?
-3. What can the player learn, discover, or become better at?
-4. Which changes in circumstances make a different approach attractive?
-5. What small playable test would help us retain, revise, or reject that mechanic?
-
-### Later design decisions
-
-- The precise scope of player authority and whether there is a central playable individual.
-- Starting scenario, campaign length, time compression, and generational pacing.
-- Simulation detail for individuals, households, institutions, money, property, and politics.
-- How much construction and interior customization the player directly controls.
-- Cultural scope, terminology, calendar treatment, and ways to represent differences between communities.
-- Succession, rivalries, splits, reconciliation, setbacks, and possible failure states.
-- The comic world-domination victory condition and whether campaigns can continue afterward.
-- Accessibility, target platforms, controls, and saving.
-- Engine choice, asset pipeline, project license, and implementation scope.
+Hiring, purchases, account creation, store submission, and publication of offers remain separate execution authorities. No such commitments were made during planning. There is no asserted release date, measured hardware specification, or completed human playtest.
 
 ## Planning log
 
@@ -79,3 +72,9 @@ Added graphics and music as explicit creative priorities. Began a discussion gui
 ### 2026-09-06 — Find the fun in the mechanics
 
 The discussion was redirected toward actual gaming mechanics and established principles for making play enjoyable. Recorded a source-grounded framework and criteria for testing candidate mechanics. Updated the planning order so that repeated decisions, rules, learning, and alternatives receive explicit attention. Graphics, music, novel experiences, and joy remain important; no core mechanic has yet been validated through play.
+
+### 2026-09-06 — Delegate and resolve the complete design
+
+The user authorized autonomous design decisions and requested a summary. Selected the project-combination core and resolved the campaign, authority, economy, social simulation, succession, world finale, presentation, technology, release scope, and production order. Retained earlier exploratory notes as history with clear supersession notices.
+
+Added a reusable numerical fixture and checker. All four counterfactual scenarios passed; sharing, leasing, and borrowing each become preferred under specified conditions. Recorded that arithmetic consistency does not establish enjoyment. The next deliverable is a small interactive mechanics prototype, followed by explicit observed-play gates.

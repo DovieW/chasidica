@@ -1,8 +1,8 @@
 # Designing for fun
 
-Initial planning proposals: 2026-09-06. The creative priority is agreed; the mechanisms below still need exploration and playtesting.
+Initial planning proposals: 2026-09-06. This is an experience-reference bank, not additional release scope. [Design v1](../DESIGN.md) now selects the mechanisms; they still require playtesting.
 
-Current priority: use the [game-design principles and tests](game-design-principles.md) to establish repeatable mechanical fun. The experiences described here remain targets, not evidence that the underlying game works.
+Current priority: apply the [game-design principles and tests](game-design-principles.md) through the [production gates](production.md). The experiences described here remain targets, not evidence that the underlying game works.
 
 ## The creative priority
 

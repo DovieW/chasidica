@@ -1,6 +1,6 @@
 # Vision and player experience
 
-Initial notes: 2026-09-06. See [decisions](decisions.md) for the distinction between agreed direction and working proposals.
+Initial notes: 2026-09-06. Historical exploration: [design v1](../DESIGN.md) now selects the direction. The proposals below preserve the early discussion; the selected specifications govern any differences.
 
 ## The promise
 
